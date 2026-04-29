@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Link Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,5 +11,192 @@
 </head>
 <body>
     
+    <!-- HTML:
+            .img src="" -> Bild einbauen 
+            .alt="" -> Alternativer Text 
+    -->
+    <!-- Bootstrap:
+            .class="img-fluid" macht das Bild responsiv
+            .m-4 -> Margin rundherum (Spacing-Level 4)
+            .rounded -> abgerundete ecken (leicht)
+            .rounded-3 -> etwas stärker -> Skala 0-5
+
+    -->
+    <!-- <img src="hero.webp" alt="Hero_Bild_V1" class="img-fluid m-4 rounded-4"> -->
+
+    <!-- HTML/CSS:
+            .<div> -> Division, neutraler Block, Gruppierung
+    -->
+
+    <!-- Bootstrap:
+
+            .container  -> fester maximaler Seitenrand
+
+                            Größe               Kürzel              Mindestbreite / Breakpoint      Container max-width 
+                            ------------------------------------------------------------------------------------------------
+                            Extra Small         (kein Kürzel)       < 576px                         100%  
+                            Small               sm                  >= 576px                        540px
+                            Medium              md                  >= 768px                        720px
+                            Large               lg                  >= 992px                        960px
+                            Extra Large         xl                  >= 1200px                       1140px
+                            XXL                 xxl                 >= 1400px                       1320px
+
+                        -> automatische Responsivität 
+                        -> zentrierte Inhalte
+
+            .my -> m = margin (Außenabstand)
+                -> p = padding (Innenabstand)
+
+                -> t = top
+                -> b = bottom 
+                -> s = start (links) 
+                -> e = end (rechts)
+                -> x = links + rechts
+                -> y = oben + unten 
+                
+                -> m(margin)+y(oben+unten)
+            
+            .overflow-hidden -> alles was über rand hinaus geht wird abgeschnitten (Normalerweise darf Inhalt über Rand hinausragen)
+
+            .w-100 -> width 100% -> nimmt 100% der Breite des Eltern-Elements ein 
+
+            .position-relative -> Alles was "absolute" positioniert ist orientiert sich an mir und NICHT an gesamtem Browserfenster
+            .position-absolute -> Element wird aus "normalem Fluss" genommen und kann frei platziert werden
+
+            .top-50 -> 50% von oben
+            .start-50 -> 50% von links
+            .translate-middle   -> Zentriert Element in sich an den davor bestimmten Punkt
+                                -> ohne wäre obere linke ecke des Elements an davor bestimmtem Punkt, nicht die Mitte des Elements
+
+            .d-flex -> aktiviert Flexboy 
+                    -> standardmäßig auf row 
+                        -> horizontale = Hauptachse
+                        -> vertikal = Querachse  
+
+            .flex-column    -> Elemente werden untereinander gestapelt, nicht mehr nebeneinander (row)
+                                -> horizontale = Querachse
+                                -> vertikale = Hauptachse
+
+            .justify-content -> steuert Hauptachse  -> start
+                                                    -> center 
+                                                    -> end 
+            .align-items -> steuert Querachse   -> start
+                                                -> center
+                                                -> end
+            .
+
+    -->
+
+    <!-- Aufbau: 
+            
+            1. Layout-Ebene (container)
+            2. Design-Ebene (overflow..)
+            3. Inhalt-Ebene (Bild)
+
+    -->
+    <div class="px-3 pt-3">
+        <div class="section-box">
+            <!-- NavBar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/Logo.png" alt="Logo_ATMOSTRACK" class="img-fluid w-100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="px-3 pt-3">
+        <div class="section-box">
+
+            <!-- Hero Section -->
+            <div class="position-relative">
+            
+
+                <!-- Hero Bild -->
+                <img src="images/dirt-road-winding-through-lush-green-valley_cut_2.jpg" alt="Hero_Bild_V2" class="img-fluid w-100">
+
+                <!-- Dark Overlay -->
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+                <!-- Text Overlay_V1 -->
+                <!-- 
+                <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+
+                    <h1 class="fw-bold">CO2.Emmissionen weltweit</h1>
+                    <p>Transparenz für eine nachhaltige Zukunft</p>
+                </div> 
+                -->
+
+                <!-- Text Overlay_V2 -->
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white">
+
+                    <h1 class="fw-bold">CO2.Emmissionen weltweit</h1>
+                    <p>Transparenz für eine nachhaltige Zukunft</p>
+                </div>
+            
+            </div>
+
+
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="container-fluid px-3 pt-3">
+        <div class="row g-3">
+            
+            <!-- Chart-Section -->
+            <div class="col-lg-4">
+                <div class="section-box h-100">
+                    <p>Chart</p>
+                </div> 
+            </div>
+
+            <!-- Table-Section -->
+            <div class="col-lg-8">
+                <div class="section-box h-100">
+                    <p>Tabelle</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="px-3 p-3">
+        <div class="section-box">
+            <footer class="d-flex justify-content-center align-items-center text-white py-5 bg-dark">
+                <h1>Footer</h1>
+            </footer>
+
+
+        </div>
+    </div>
+ 
+    
 </body>
+
+<!-- Link Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </html>

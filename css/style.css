@@ -1,0 +1,18 @@
+.myownnav{
+    height: 50px; 
+}
+
+
+
+.myowncontent{
+    height: 400px;
+}
+
+.section-box {
+    
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: blue;
+    
+    border: 2px solid red;    
+}
