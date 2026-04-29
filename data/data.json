@@ -1,0 +1,55 @@
+[
+  { "company": "EcoSteel GmbH", "country": "Deutschland", "industry": "Stahl", "year": 2023, "emission": 420000, "change": -3.2 },
+  { "company": "NordWind Energy", "country": "Dänemark", "industry": "Energie", "year": 2023, "emission": 185000, "change": -8.7 },
+  { "company": "AlpineLogistik AG", "country": "Schweiz", "industry": "Logistik", "year": 2023, "emission": 96000, "change": 1.4 },
+  { "company": "GreenChem Industries", "country": "Deutschland", "industry": "Chemie", "year": 2022, "emission": 310000, "change": -2.1 },
+  { "company": "BlueTransport Ltd.", "country": "UK", "industry": "Transport", "year": 2023, "emission": 142000, "change": 3.8 },
+
+  { "company": "SolarGrid AG", "country": "Deutschland", "industry": "Energie", "year": 2021, "emission": 120000, "change": -5.1 },
+  { "company": "Oceanic Shipping", "country": "UK", "industry": "Transport", "year": 2022, "emission": 270000, "change": 2.3 },
+  { "company": "IronWorks Corp", "country": "USA", "industry": "Stahl", "year": 2023, "emission": 510000, "change": 0.5 },
+  { "company": "CleanAir Solutions", "country": "Schweiz", "industry": "Chemie", "year": 2021, "emission": 88000, "change": -4.4 },
+  { "company": "LogiTrans GmbH", "country": "Deutschland", "industry": "Logistik", "year": 2022, "emission": 132000, "change": 1.9 },
+
+  { "company": "WindForce Ltd.", "country": "Dänemark", "industry": "Energie", "year": 2020, "emission": 140000, "change": -6.0 },
+  { "company": "SteelDynamics", "country": "USA", "industry": "Stahl", "year": 2021, "emission": 480000, "change": 2.1 },
+  { "company": "EcoChem AG", "country": "Schweiz", "industry": "Chemie", "year": 2023, "emission": 102000, "change": -1.5 },
+  { "company": "CargoFlow", "country": "Deutschland", "industry": "Logistik", "year": 2020, "emission": 115000, "change": 3.0 },
+  { "company": "RapidTransport Inc.", "country": "USA", "industry": "Transport", "year": 2023, "emission": 230000, "change": 4.2 },
+
+  { "company": "GreenSteel Europe", "country": "Deutschland", "industry": "Stahl", "year": 2022, "emission": 395000, "change": -2.8 },
+  { "company": "Nordic Power", "country": "Dänemark", "industry": "Energie", "year": 2023, "emission": 165000, "change": -7.3 },
+  { "company": "SwissChem Labs", "country": "Schweiz", "industry": "Chemie", "year": 2020, "emission": 92000, "change": 0.9 },
+  { "company": "FastLogistics", "country": "UK", "industry": "Logistik", "year": 2022, "emission": 110000, "change": 2.5 },
+  { "company": "AirCargo Ltd.", "country": "UK", "industry": "Transport", "year": 2021, "emission": 175000, "change": 3.1 },
+
+  { "company": "SteelWorks AG", "country": "Deutschland", "industry": "Stahl", "year": 2020, "emission": 430000, "change": -1.2 },
+  { "company": "EcoEnergy Systems", "country": "USA", "industry": "Energie", "year": 2023, "emission": 210000, "change": -4.9 },
+  { "company": "ChemCore", "country": "USA", "industry": "Chemie", "year": 2022, "emission": 295000, "change": 1.1 },
+  { "company": "MoveIt Logistics", "country": "Deutschland", "industry": "Logistik", "year": 2023, "emission": 123000, "change": 2.0 },
+  { "company": "TransGlobal", "country": "USA", "industry": "Transport", "year": 2021, "emission": 260000, "change": 3.6 },
+
+  { "company": "MetalCore", "country": "UK", "industry": "Stahl", "year": 2023, "emission": 350000, "change": -2.0 },
+  { "company": "WindWave", "country": "Dänemark", "industry": "Energie", "year": 2022, "emission": 150000, "change": -6.5 },
+  { "company": "BioChem Europe", "country": "Deutschland", "industry": "Chemie", "year": 2023, "emission": 210000, "change": -1.9 },
+  { "company": "SpeedCargo", "country": "USA", "industry": "Logistik", "year": 2021, "emission": 134000, "change": 2.8 },
+  { "company": "RailTrans", "country": "Deutschland", "industry": "Transport", "year": 2022, "emission": 165000, "change": 1.7 },
+
+  { "company": "IronPeak", "country": "USA", "industry": "Stahl", "year": 2020, "emission": 470000, "change": 1.5 },
+  { "company": "SunGrid", "country": "Deutschland", "industry": "Energie", "year": 2023, "emission": 190000, "change": -3.6 },
+  { "company": "ChemSolutions", "country": "UK", "industry": "Chemie", "year": 2022, "emission": 175000, "change": 0.4 },
+  { "company": "QuickLog", "country": "Schweiz", "industry": "Logistik", "year": 2021, "emission": 98000, "change": 1.2 },
+  { "company": "SkyTransport", "country": "USA", "industry": "Transport", "year": 2023, "emission": 245000, "change": 3.9 },
+
+  { "company": "SteelFlow", "country": "Deutschland", "industry": "Stahl", "year": 2021, "emission": 410000, "change": -2.3 },
+  { "company": "HydroPower DK", "country": "Dänemark", "industry": "Energie", "year": 2020, "emission": 135000, "change": -5.5 },
+  { "company": "PureChem", "country": "Schweiz", "industry": "Chemie", "year": 2023, "emission": 105000, "change": -1.0 },
+  { "company": "CargoExpress", "country": "UK", "industry": "Logistik", "year": 2022, "emission": 118000, "change": 2.1 },
+  { "company": "TransRail", "country": "Deutschland", "industry": "Transport", "year": 2023, "emission": 155000, "change": 1.5 },
+
+  { "company": "GlobalSteel", "country": "USA", "industry": "Stahl", "year": 2022, "emission": 520000, "change": 0.7 },
+  { "company": "EcoWind", "country": "Dänemark", "industry": "Energie", "year": 2023, "emission": 160000, "change": -7.0 },
+  { "company": "ChemInnovate", "country": "Deutschland", "industry": "Chemie", "year": 2021, "emission": 230000, "change": -0.8 },
+  { "company": "MoveFast", "country": "USA", "industry": "Logistik", "year": 2020, "emission": 125000, "change": 3.3 },
+  { "company": "AirFreight Pro", "country": "UK", "industry": "Transport", "year": 2022, "emission": 190000, "change": 2.7 }
+]

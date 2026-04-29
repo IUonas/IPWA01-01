@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Link Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="css/stylesheet.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main class="container px-1 py-5">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-centered">
+            <div class="container-fluid">
+                
+                <!-- Logo -->
+                <a class="navbar-brand" href="home.html">
+                    <img src="images/Logo.png" alt="Logo_ATMOSTRACK" height="80">
+                </a>
+                        
+                <!-- Hamburger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Globale Navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="table.html">Tabelle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vanilla.html">Vanilla</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="frameworks.html">Frameworks</a>
+                        </li>     
+                    </ul>  
+                </div>
+            </div>     
+        </nav>
+
+
+        <!-- Content -->
+        <h1 class="mb-4 mt-5">Kontakt</h1>
+
+        <p class="text-muted mb-5">
+            Haben Sie Fragen zu den dargestellten Daten oder zur Plattform? 
+            Nutzen Sie das folgende Formular oder kontaktieren Sie uns direkt.
+        </p>
+
+        <div class="row g-4">
+        
+            <!-- Kontaktformular -->
+            <div class="col-lg-6 col-12">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Ihr Name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">E-Mail</label>
+                        <input type="email" class="form-control" placeholder="Ihre E-Mail">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Nachricht</label>
+                        <textarea class="form-control" rows="5" placeholder="Ihre Nachricht"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark">
+                        Nachricht senden
+                    </button>
+                </form>
+            </div>
+
+            <!-- Kontaktdaten -->
+            <div class="col-lg-6 col-12">
+                <div class="p-4 border rounded h-100">
+                    <h5>Direkter Kontakt</h5>
+
+                    <p class="mt-3">
+                        <strong>ATMOS Track</strong><br>
+                        Max Mustermann<br>
+                        Musterstraße 1<br>
+                        12345 Musterstadt
+                    </p>
+
+                    <p>
+                        <strong>E-Mail:</strong><br>
+                        info@atmostrack.de
+                    </p>
+
+                    <p>
+                        <strong>Telefon:</strong><br>
+                        +49 123 456789
+                    </p>
+
+                    <hr>
+
+                    <p class="text-muted">
+                        Hinweis: Diese Seite dient ausschließlich Demonstrationszwecken im Rahmen einer Fallstudie. 
+                        Es erfolgt keine tatsächliche Datenverarbeitung.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="footer mt-5 pt-4 border-top"> 
+             
+            <div class="row g-3 mb-5">
+                <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center">
+                    <a href="home.html">
+                        <img src="images/Logo.png" alt="Logo_ATMOSTRACK" height="80">
+                    </a>
+                </div>
+                <div class="col-lg-8 col-12 d-flex align-items-end px-3">
+                    <div class="text-muted">
+                        <p>
+                            Diese Webseite dient ausschließlich Demonstrationszwecken im Rahmen der 
+                            Fallstudie „CO₂-Footprint“. Alle dargestellten Daten sind fiktiv.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-12 d-flex flex-column px-3">
+                    <a class="link-secondary" href="impressum.html">Impressum</a>
+                    <a class="link-secondary" href="datenschutz.html">Datenschutz</a>
+                    <a class="link-secondary" href="kontakt.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-end">
+                <p>
+                    © 2026 ATMOS Track – CO₂ Emissions Dashboard
+                </p>
+            </div>
+            
+        </footer>
+    </main>
+
+
+
+</body>
+
+<!-- Link Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</html>

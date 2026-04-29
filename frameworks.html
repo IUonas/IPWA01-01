@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Link Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="css/stylesheet.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main class="container px-1 py-5">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-centered">
+            <div class="container-fluid">
+                
+                <!-- Logo -->
+                <a class="navbar-brand" href="home.html">
+                    <img src="images/Logo.png" alt="Logo_ATMOSTRACK" height="80">
+                </a>
+                        
+                <!-- Hamburger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Globale Navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="table.html">Tabelle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vanilla.html">Vanilla</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="frameworks.html">Frameworks</a>
+                        </li>     
+                    </ul>  
+                </div>
+            </div>     
+        </nav>
+
+        <!-- Content 1 -->
+        <section class="tech-hero my-5">
+            <div class="row align-items-center g-4">
+
+                <!-- Überschrift -->
+                <div class="col-lg-5">
+                    <h1 class="display-5 fw-bold">Technologie & Umsetzung</h1>
+                    <p class="lead">
+                        Diese Seite zeigt, welche Frameworks, Bibliotheken und eigenen JavaScript-Funktionen
+                        für die Umsetzung von AtmosTrack verwendet wurden.
+                    </p>
+                    <a href="home.html" class="btn btn-dark mt-3">Zurück zur Startseite</a>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="col-lg-7">
+                    <div class="tech-grid">
+                        <div class="card info-card p-4">
+                            <h3>Responsive Web-App</h3>
+                            <p>CO₂-Daten werden strukturiert, filterbar und visuell verständlich dargestellt.</p>
+                        </div>
+                        <div class="card p-4">
+                            <h4>Bootstrap</h4>
+                            <p>Layout & Design</p>
+                        </div>
+                        <div class="card p-4">
+                            <h4>Tabulator</h4>
+                            <p>Tabelle & Filter</p>
+                        </div>
+                        <div class="card p-4">
+                            <h4>Chart.js</h4>
+                            <p>Datenvisualisierung</p>
+                        </div>
+                        <div class="card accent-card p-4">
+                            <h4>Vanilla JS</h4>
+                            <p>Eigene Logik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content 2 -->
+         <section class="row g-4 my-5">
+
+            <!-- Bootstrap Card -->
+            <div class="col-md-6 col-xl-4">
+                <div class="card p-4 h-100">
+                    <h3>Bootstrap</h3>
+                    <p>
+                        Bootstrap wurde für das responsive Grundlayout eingesetzt. Das Grid-System ermöglicht
+                        eine flexible Darstellung auf Desktop, Tablet und Smartphone.
+                    </p>
+                    <ul>
+                        <li>Responsives 12-Spalten-Grid</li>
+                        <li>Buttons, Container und Abstände</li>
+                        <li>Mobile-first Aufbau</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tabulator Card -->
+            <div class="col-md-6 col-xl-4">
+                <div class="card p-4 h-100">
+                    <h3>Tabulator</h3>
+                    <p>
+                        Tabulator übernimmt die Darstellung der CO₂-Tabelle. Dadurch können Daten komfortabel
+                        sortiert und gefiltert werden.
+                    </p>
+                    <ul>
+                        <li>Filter nach Land, Branche und Unternehmen</li>
+                        <li>Sortierbare Spalten</li>
+                        <li>Tabellenansicht mit Pagination</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chart Card -->
+            <div class="col-md-6 col-xl-4">
+                <div class="card p-4 h-100">
+                    <h3>Chart.js</h3>
+                    <p>
+                        Chart.js visualisiert die Emissionsdaten. Je nach Filterzustand wechselt die Darstellung
+                        dynamisch zwischen Kreisdiagramm und Balkendiagramm.
+                    </p>
+                    <ul>
+                        <li>Kreisdiagramm für Länderübersicht</li>
+                        <li>Balkendiagramm für Unternehmensdaten</li>
+                        <li>Dynamische Aktualisierung</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer mt-5 pt-4 border-top"> 
+             
+            <div class="row g-3 mb-5">
+                <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center">
+                    <a href="home.html">
+                        <img src="images/Logo.png" alt="Logo_ATMOSTRACK" height="80">
+                    </a>
+                </div>
+                <div class="col-lg-8 col-12 d-flex align-items-end px-3">
+                    <div class="text-muted">
+                        <p>
+                            Diese Webseite dient ausschließlich Demonstrationszwecken im Rahmen der 
+                            Fallstudie „CO₂-Footprint“. Alle dargestellten Daten sind fiktiv.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-12 d-flex flex-column px-3">
+                    <a class="link-secondary" href="impressum.html">Impressum</a>
+                    <a class="link-secondary" href="datenschutz.html">Datenschutz</a>
+                    <a class="link-secondary" href="kontakt.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-end">
+                <p>
+                    © 2026 ATMOS Track – CO₂ Emissions Dashboard
+                </p>
+            </div>
+            
+        </footer>
+    </main>
+
+</body>
+
+<!-- Link Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,137 @@
+
+body {
+  background-color: #f4f6f9;
+}
+
+.hero {
+    min-height: 50vh;
+    display: flex; 
+    align-items: center;
+}
+
+.card {
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: 20vh;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    color: #111;
+      
+    
+}
+
+.card h3,
+.card h4 {
+    font-weight: 700;
+}
+
+
+.info-card {
+    background-color: #fe5f55;
+    grid-column: span 2;
+    grid-row: span 2;
+    
+}
+
+.accent-card {
+    background-color: #e8e1ef;
+    
+}
+
+.chart-card {
+    min-height: 60vh;
+}
+
+.tech-hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem
+}
+
+
+
+
+
+
+/* Ausrichtung Nav */
+@media (min-width: 992px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        left: 0;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+
+/* Tabelle clean */
+.tabulator {
+    border: none !important;
+    background-color: transparent !important;
+    font-size: 0.95rem;
+}
+
+/* Header */
+.tabulator .tabulator-header {
+    background-color: transparent !important;
+    border-bottom: 1px solid #dee2e6 !important;
+    font-weight: 600;
+}
+
+/* Header-Zellen */
+.tabulator .tabulator-col {
+    background: transparent !important;
+    border-right: none !important;
+}
+
+
+/* Zeilen */
+.tabulator .tabulator-row {
+    background-color: transparent !important;
+    border-bottom: 1px solid #dee2e6 !important;
+  
+}
+
+/* Zellen */
+.tabulator .tabulator-cell {
+    border-right: none !important;
+    padding: 12px 10px;
+}
+
+/* Hover */
+.tabulator .tabulator-row:hover {
+    background-color: #f8f9fa !important;
+}
+.tabulator,
+.tabulator .tabulator-tableholder,
+.tabulator .tabulator-table,
+.tabulator .tabulator-row,
+.tabulator .tabulator-row.tabulator-row-even,
+.tabulator .tabulator-row.tabulator-row-odd {
+    background-color: transparent !important;
+}
+
+
+
+
+/* Filterfelder im Header dezenter */
+.tabulator .tabulator-header-filter input,
+.tabulator .tabulator-header-filter select {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 0.85rem;
+    background-color: #fff;
+}

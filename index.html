@@ -4,6 +4,9 @@
 <!-- Link Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
+
+<!-- Link Tabulator -->
+<link href="https://unpkg.com/tabulator-tables@6.4.0/dist/css/tabulator.min.css" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,106 +97,334 @@
             3. Inhalt-Ebene (Bild)
 
     -->
-    <div class="px-3 pt-3">
-        <div class="section-box">
+    <div class="container px-1 pt-3 pb-5">
+        <!-- <div class="section-box"> -->
             <!-- NavBar -->
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg navbar-centered">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/Logo.png" alt="Logo_ATMOSTRACK" class="img-fluid w-100">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
+                    
+
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="#">
+                            <img src="images/Logo.png" alt="Logo_ATMOSTRACK" height="80">
+                        </a>
+                        
+                        <!-- Mobile Button -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Navigation -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="table.html">Tabelle</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vergleich.html">Vergleich</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="frameworks.html">Frameworks</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    
+                        
+                        </div>
                     </div>
+                   
                 </div>
             </nav>
+        <!-- </div> -->
+
+    </div>
+
+    <div class="container px-1 py-5">
+        <div class="row g-3">
+            <div class="col-2"></div>
+            <div class="col-8 d-flex align-items-center justify-content-center text-center">
+                <div>
+                
+                        <h1 class="fw">CO₂-Emissionen weltweit sichtbar gemacht</h1>
+                        <p>Verstehen Sie, welche Länder und Unternehmen maßgeblich zum CO₂-Ausstoß beitragen – und schaffen Sie die Grundlage für fundierte Entscheidungen in Richtung Klimaschutz und Nachhaltigkeit.</p>
+                        <a href="table.html" class="btn btn-dark">Dark</a>
+                </div>
+                
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="container px-1 py-5">
+        <div class="row g-3">
+            <div class="col-lg-4">
+                <div class="section-box">
+                    <img src="images/CO3.png" alt="Hero_Bild_1" class="img-fluid w-100">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="section-box">
+                    <img src="images/CO4.png" alt="Hero_Bild_2" class="img-fluid w-100">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="section-box-red position-relative p-4 h-100">
+                    
+                        <div class="position-absolute top-0 start-0 p-4 text-dark">
+                            <h2>Alle Details hier erhältlich im Projektbericht</h2>
+                        </div>
+                        <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                            <button type="button" class="btn btn-dark">Dark</button>
+                        </div>
+                    
+                </div>
+            </div>
         </div>
     </div>
 
+     <div class="container px-1 py-5">
+        <div class="row g-3">
+            <div class="col-3"></div>
+            <div class="col-6 d-flex align-items-center justify-content-center text-center">
+                <div>
+                
+                        <h1 class="fw">Unser Service</h1>
+                        <p>Verstehen Sie, welche Länder und Unternehmen maßgeblich zum CO₂-Ausstoß beitragen – und schaffen Sie die Grundlage für fundierte Entscheidungen in Richtung Klimaschutz und Nachhaltigkeit.</p>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                </div>
+                
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+    <div class="container px-1 pt-3 pb-2">
+        <div class="row g-3">
+            <div class="col-6">
+                <div class="section-box-blue p-3">
+                    <h3>Globale Emissionen analysieren</h3>
+                    <p>Vergleichen Sie CO₂-Emissionen verschiedener Länder und erkennen Sie globale Trends und Unterschiede.</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="section-box-blue p-3">
+                <h3>Unternehmen im Detail</h3>
+                <p>Untersuchen Sie Emissionsdaten einzelner Unternehmen und filtern Sie gezielt nach Branche oder Standort.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="container px-1 pb-5 pt-2">
+        <div class="row g-3">
+            <div class="col-6">
+                <div class="section-box-blue p-3">
+                <h3>Interaktive Datenvisualisierung</h3>
+                <p>Nutzen Sie dynamische Diagramme und Tabellen, um komplexe Daten einfach verständlich darzustellen.</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="section-box-blue p-3">
+                <h3>Technischer Vergleich</h3>
+                <p>Erleben Sie den Unterschied zwischen einer Framework-basierten und einer selbst entwickelten Tabellenlösung.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
     <div class="px-3 pt-3">
         <div class="section-box">
 
-            <!-- Hero Section -->
+            Hero Section
             <div class="position-relative">
             
 
-                <!-- Hero Bild -->
+                Hero Bild
                 <img src="images/dirt-road-winding-through-lush-green-valley_cut_2.jpg" alt="Hero_Bild_V2" class="img-fluid w-100">
 
-                <!-- Dark Overlay -->
+                Dark Overlay
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
 
-                <!-- Text Overlay_V1 -->
-                <!-- 
+                Text Overlay_V1
+                
                 <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
 
                     <h1 class="fw-bold">CO2.Emmissionen weltweit</h1>
                     <p>Transparenz für eine nachhaltige Zukunft</p>
                 </div> 
-                -->
+                
 
-                <!-- Text Overlay_V2 -->
+                Text Overlay_V2
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white">
 
                     <h1 class="fw-bold">CO2.Emmissionen weltweit</h1>
                     <p>Transparenz für eine nachhaltige Zukunft</p>
                 </div>
-            
             </div>
-
-
         </div>
     </div>
+    -->
     
-    <!-- Content -->
+    <!-- Footer -->
+    <div class="container px-1 p-3">
+        <div class="section-box">
+            <footer class="footer mt-5 py-4 border-top">
+                
+                <div class="row g-3">
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                            <a class="navbar-brand" href="#">
+                                <img src="images/Logo.png" alt="Logo_ATMOSTRACK" height="80">
+                            </a>
+                    </div>
+                    <div class="col-6 d-flex align-items-end">
+                        <div class="container text-muted">
+                            <p>
+                                Diese Webseite dient ausschließlich Demonstrationszwecken im Rahmen der 
+                                Fallstudie „CO₂-Footprint“. Alle dargestellten Daten sind fiktiv.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex flex-column">
+                        <a href="#">Impressum</a>
+                        <a href="#">Datenschutz</a>
+                        <a href="#">Kontakt</a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-end">
+                    <p>
+                        © 2026 ATMOS Track – CO₂ Emissions Dashboard
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+  
+    
+    <!-- Container - Tabelle Manuell
     <div class="container-fluid px-3 pt-3">
         <div class="row g-3">
-            
-            <!-- Chart-Section -->
-            <div class="col-lg-4">
+            <div class="col-lg-12">
                 <div class="section-box h-100">
-                    <p>Chart</p>
-                </div> 
-            </div>
 
-            <!-- Table-Section -->
-            <div class="col-lg-8">
-                <div class="section-box h-100">
-                    <p>Tabelle</p>
+                    buttons zur Sortierung
+                    <button id="sortCompany">Unternehmen sortieren</button>
+                    <button id="sortCountry">Land sortieren</button>
+                    <button id="sortIndustry">Branche sortieren</button>
+
+                    Suchleiste für Filter
+                    <input type="text" id="searchInput" placeholder="Unternehmen Suchen...">
+                    
+                    Tabelle
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Unternehmen</th>
+                                <th>Land</th>
+                                <th>Branche</th>
+                                <th>Jahr</th>
+                                <th>Emission</th>
+                                <th>Veränderung zu Vorjahr</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                
                 </div>
             </div>
-
         </div>
     </div>
-
-    <!-- Footer -->
-    <div class="px-3 p-3">
-        <div class="section-box">
-            <footer class="d-flex justify-content-center align-items-center text-white py-5 bg-dark">
-                <h1>Footer</h1>
-            </footer>
+    -->
 
 
-        </div>
-    </div>
- 
+
+
+    <!-- HTML Tabelle:
+            <tabel></table> -> Aufbau Tabelle 
+            <thead></thead> -> Kopfbereich
+            <tbody></tbody> -> Datenbereich
+            <tr></tr>       -> eine Zeile 
+            <th></th>       -> Überschrift-Zelle
+            <td></td>       -> normale Daten-Zelle
+
+            id="tablebody" -> Zugang von table.js auf Tabellenbereich
+    -->
+    <!-- Bootstrap:
+            .table      -> Bootstrap Standard Tabelle
+                .table-striped -> erweitert Tabelle mit Farbunterschied zwischen einzelnen Zeilen 
+                .table-hover   -> erweitert Tabelle: Zeile über der die Maus hovert wird hervorgehoben
+
+
+    -->
+
+    <!-- Table HTML Only -->
+
     
+            <!--
+
+            Manueller Eintrag der Daten: 
+
+            <tr>
+                <td>EcoSteel GmbH</td>
+                <td>Deutschland</td>
+                <td>Stahl</td>
+                <td>2023</td>
+                <td>420000</td>
+                <td>-3.2%</td>
+            </tr>
+            <tr>
+                <td>NordWind Energy</td>
+                <td>Dänemark</td>
+                <td>Energie</td>
+                <td>2023</td>
+                <td>185000</td>
+                <td>-8.7%</td>
+            </tr>
+            <tr>
+                <td>AlpineLogistik AG</td>
+                <td>Schweiz</td>
+                <td>Logistik</td>
+                <td>2023</td>
+                <td>96000</td>
+                <td>+1.4%</td>
+                
+            </tr>
+            <tr>
+                <td>GreenChem Industries</td>
+                <td>Deutschland</td>
+                <td>Chemie</td>
+                <td>2022</td>
+                <td>310000</td>
+                <td>-2.1%</td>
+            </tr>
+            <tr>
+                <td>BlueTransport Ltd.</td>
+                <td>UK</td>
+                <td>Transport</td>
+                <td>2023</td>
+                <td>142000</td>
+                <td>+3.8%</td>
+            </tr>
+
+            -->
+
+        </tbody>
+    </table>
+    
+    <!-- Link Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Link Tabulator JS -->
+    <script src="https://unpkg.com/tabulator-tables@6.4.0/dist/js/tabulator.min.js"></script>
+    
+   
+
+    <script src="js/table.js"></script>
 </body>
 
 <!-- Link Bootstrap JS -->
