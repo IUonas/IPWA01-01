@@ -106,7 +106,7 @@ function createChart(type, labels, values, labelText) {
 }
 
 
-//Chart basierend auf Filterstatus aktualisiere
+//Chart basierend auf Filterstatus aktualisieren
 function updateChart(visibleData) {
     const filters = table.getHeaderFilters();
 

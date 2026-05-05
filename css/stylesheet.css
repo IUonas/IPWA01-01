@@ -136,3 +136,8 @@ body {
     background-color: #fff;
 }
 
+
+
+html[dir="rtl"] .navbar-nav {
+    flex-direction: row-reverse;
+}

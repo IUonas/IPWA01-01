@@ -17,30 +17,19 @@ let currentData = [...emissionsData];
 const tableBody = document.getElementById("tableBody");
 
 function renderTable(data) {
-    
-    //"leeren" des tableBodys 
-    tableBody.innerHTML = "";
+  tableBody.textContent = "";
 
-    //neu rendern der Tabelle
-    data.forEach(entry => 
-    
-        {
-        
-            // += -> ersetzt nicht sondern erweitert den HTML eintrag 
-            tableBody.innerHTML += 
-                `
-                <tr>
-                    <td>${entry.company}</td>
-                    <td>${entry.country}</td>
-                    <td>${entry.industry}</td>
-                    <td>${entry.year}</td>
-                    <td>${entry.emission}</td>
-                    <td>${entry.change}</td>
-                </tr>
-                `
-            ;
-        }
-    )
+  data.forEach(entry => {
+    const row = document.createElement("tr");
+
+    ["company", "country", "industry", "year", "emission", "change"].forEach(field => {
+      const cell = document.createElement("td");
+      cell.textContent = entry[field];
+      row.appendChild(cell);
+    });
+
+    tableBody.appendChild(row);
+  });
 }
 
 

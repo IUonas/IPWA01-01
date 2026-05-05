@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ATMOS Track - CO₂-Emissionen</title>
 </head>
 <body>
     
@@ -43,13 +43,13 @@
                             </button>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <button class="dropdown-item" type="button">Übersicht</button>
+                                    <a class="dropdown-item" href="#uebersicht">Übersicht</a>
                                 </li>
                                 <li>
-                                    <button class="dropdown-item" type="button">chart</button>
+                                    <a class="dropdown-item" href="#chart">Chart</a>
                                 </li>
                                 <li>
-                                    <button class="dropdown-item" type="button">Tabelle</button>
+                                    <a class="dropdown-item" href="#table">Tabelle</a>
                                 </li>
                             </ul>
                         </div>
@@ -72,7 +72,7 @@
         </nav>
 
         <!-- Überschrift -->
-        <section class="row mt-5 pt-4">
+        <section id="uebersicht" class="row mt-5 pt-4">
             <div class="col-sm-12 col-lg-6 ps-5">
                 <h1 class="display-5 fw-bold">Alle CO₂-Emissionen im Überblick</h1>
             </div>
@@ -83,14 +83,14 @@
             <div class="row g-3">
             
                 <!-- Chart-Section -->
-                <div class="col-lg-4">
+                <div id="chart" class="col-lg-4">
                     <div class="chart-card p-5 h-100">
                         <canvas id="emissionsChart"></canvas>
                     </div> 
                 </div>
 
                 <!-- Table-Section -->
-                <div class="col-lg-8">
+                <div id="table" class="col-lg-8">
                     <div class="card p-4 h-100">
 
                         <!-- Tabelle -->
